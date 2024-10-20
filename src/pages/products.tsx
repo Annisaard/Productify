@@ -13,9 +13,9 @@ export default function products() {
 
   return (
     <Layout>
-      <div className="container py-20 md:py-32 px-10">
+      <div className="container mx-auto py-20 md:py-32 px-10">
         <div className="flex justify-between">
-          <h1>Products</h1>
+          <h1 className="text-3xl md:text-4xl font-bold">Products</h1>
           <div className="">
             <Input placeholder="search..." className="rounded-md" />
           </div>
@@ -31,7 +31,7 @@ export default function products() {
             </>
           ) : (
             <>
-              {products.splice(0, 6).map((product, index) => (
+              {products.map((product, index) => (
                 <ProductCard product={product} key={index} />
               ))}
             </>

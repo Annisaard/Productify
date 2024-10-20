@@ -11,16 +11,16 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <Layout>
-      <main className="container w-full">
-        <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
+      <main className="">
+        <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-24">
           <div className="text-center space-y-8">
             <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
               <h1>
-                Experience the
+                Discover Your
                 <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                  Shadcn
+                  Dream
                 </span>
-                landing page
+                Products, Save Them to Wishlist
               </h1>
             </div>
 
@@ -31,12 +31,12 @@ export default function Home() {
 
             <div className="space-y-4 md:space-y-0 md:space-x-4">
               <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
-                Get Started
+                Browser Products
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </Button>
 
               <Button asChild variant="secondary" className="w-5/6 md:w-1/4 font-bold">
-                <Link href="https://github.com/nobruf/shadcn-landing-page.git" target="_blank">
+                <Link href="https://github.com/Annisaard/Productify" target="_blank">
                   Github respository
                 </Link>
               </Button>
